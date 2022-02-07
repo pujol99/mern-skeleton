@@ -1,0 +1,38 @@
+@mixin center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin centerParent {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin xCenter {
+    margin: 0 auto;
+    width: 100%;
+}
+
+@mixin easyInOut($time){
+    animation-duration: $time;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@mixin blur {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(32px);
+}
+
+@mixin shadow {
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+}
+
+@mixin error { background-color: $error !important;} .error{ @include error }
+@mixin warning { background-color: $warning !important;} .warning{ @include warning }
+@mixin ok { background-color: $ok !important;} .ok{ @include ok }

@@ -1,0 +1,37 @@
+$color0: #fffcf2;
+$color1: #132a13;
+$color2: #31572c;
+$color3: #4f772d;
+$color4: #90a955;
+$color5: #ecf39e;
+$color6: #252422;
+
+$error: #cc3300;
+$warning: #ffcc00;
+$ok: #339900;
+
+$buttonBG: $color0;
+$buttonBG-hover: $color6;
+
+$buttonFG: $buttonBG-hover;
+$buttonFG-hover: $buttonBG;
+
+$x1-font: 10px;
+$x2-font: 12px;
+$x3-font: 14px;
+$x4-font: 18px;
+$x5-font: 22px;
+$x6-font: 26px;
+$x7-font: 32px;
+
+// width scale for phone
+$phone-width: 480px !default;
+$tablet-width: 800px !default;
+$desktop-width: 4000px !default;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600;700&display=swap');
+$font-content: 'Fira Code', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Source+Serif+4:wght@800&display=swap');
+$font-header: 'Source Serif 4', sans-serif;

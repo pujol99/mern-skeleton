@@ -1,0 +1,33 @@
+@mixin button {
+    transition: 0.4s;
+    cursor: pointer;
+    
+    font-family: $font-content;
+    background-color: $buttonBG;
+    color: $buttonFG;
+
+    @media (hover: hover) {
+        &:hover {
+            background: $buttonBG-hover;
+            color: $buttonFG-hover;
+        }
+    }
+}
+
+@mixin buttonDisabled {
+    cursor: default;
+
+    background-color: $buttonBG;
+    color: $buttonFG;
+
+    &:hover {
+        background: $buttonBG;
+        color: $buttonFG;
+    }
+}
+
+
+.selected {
+    background: $buttonBG-hover !important;
+    color: $buttonFG-hover !important;
+}
